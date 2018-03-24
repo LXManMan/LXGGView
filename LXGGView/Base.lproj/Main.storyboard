@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vWJ-sQ-dhW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qra-Dh-WY7">
+                                <rect key="frame" x="144.5" y="268.5" width="86" height="30"/>
+                                <state key="normal" title="WebURl类型"/>
+                                <connections>
+                                    <action selector="url:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6r-ic-a9f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-Gb-1nv">
+                                <rect key="frame" x="110.5" y="368.5" width="153" height="30"/>
+                                <state key="normal" title="使用系统的照片选择器"/>
+                                <connections>
+                                    <action selector="image:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js8-Sd-wvE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-VM-st0">
+                                <rect key="frame" x="80" y="442" width="215" height="30"/>
+                                <state key="normal" title="使用第三方可多选的照片选择器"/>
+                                <connections>
+                                    <action selector="rd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2QJ-fM-dmy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qra-Dh-WY7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="5li-1w-2pp"/>
+                            <constraint firstItem="MGd-VM-st0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDg-Vk-KP9"/>
+                            <constraint firstItem="qra-Dh-WY7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PV1-Gy-mGe"/>
+                            <constraint firstItem="MGd-VM-st0" firstAttribute="top" secondItem="Jrh-Gb-1nv" secondAttribute="bottom" constant="43.5" id="RvL-9A-gN4"/>
+                            <constraint firstItem="Jrh-Gb-1nv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ooU-cQ-Mm7"/>
+                            <constraint firstItem="Jrh-Gb-1nv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="xoD-tH-eCb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TNZ-i4-YXS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="29.23538230884558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1qe-fS-Xfo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vWJ-sQ-dhW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EIF-Sn-mYh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0zd-vk-15p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8M8-J4-n9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-815" y="-32"/>
+        </scene>
+    </scenes>
+</document>
