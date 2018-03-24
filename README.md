@@ -1,6 +1,6 @@
 # LXGGView
 
-！[image](https://github.com/liuxinixn/LXGGView/blob/master/%E9%80%89%E6%8B%A9%E7%85%A7%E7%89%87.gif)
+![image](https://github.com/liuxinixn/LXGGView/blob/master/%E9%80%89%E6%8B%A9%E7%85%A7%E7%89%87.gif)
 
 ```
 使用方法：
